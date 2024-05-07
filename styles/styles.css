@@ -61,6 +61,24 @@ h6 {
 .header {
   grid-column: 2 / -1;
   background-color: #fff;
+  display: grid;
+  grid-template-columns: 1.75fr 1fr;
+  padding: 1rem 1.5rem;
+}
+
+.search {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.search #search-bar {
+  border-radius: 15px;
+  flex: 1;
+  background-color: #eee;
+  border: none;
 }
 
 .sidebar {
