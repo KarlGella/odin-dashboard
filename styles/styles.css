@@ -53,6 +53,22 @@ h6 {
   background-color: #eee;
 }
 
+.search-icon {
+  width: 1.3rem;
+  min-height: 1.3rem;
+}
+
+.notif-icon {
+  width: 1.5rem;
+  min-height: 1.5rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  min-height: 1rem;
+  width: 3.5rem;
+}
+
 .container {
   display: grid;
   grid-template: 1fr 2fr 2fr / 0.75fr 2fr 1fr;
@@ -64,6 +80,7 @@ h6 {
   display: grid;
   grid-template-columns: 1.75fr 1fr;
   padding: 1rem 1.5rem;
+  font-size: 1rem;
 }
 
 .search {
@@ -79,6 +96,14 @@ h6 {
   flex: 1;
   background-color: #eee;
   border: none;
+}
+
+.profile {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.2rem;
 }
 
 .sidebar {
