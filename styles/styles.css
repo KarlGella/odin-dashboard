@@ -102,7 +102,7 @@ li {
   border: none;
 }
 
-.profile {
+.profile-header {
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
@@ -110,7 +110,7 @@ li {
   gap: 0.75rem;
 }
 
-.profile .profile-img {
+.profile-header .profile-img {
   border-radius: 50%;
   min-height: 0.5rem;
   width: 3rem;
