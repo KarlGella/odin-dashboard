@@ -79,7 +79,7 @@ h6 {
   background-color: #fff;
   display: grid;
   grid-template-columns: 1.75fr 1fr;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2.5rem;
   font-size: 1rem;
 }
 
@@ -88,7 +88,6 @@ h6 {
   align-items: center;
   display: flex;
   gap: 10px;
-  padding: 1rem;
 }
 
 .search #search-bar {
@@ -104,6 +103,18 @@ h6 {
   justify-content: flex-end;
   align-items: center;
   gap: 1.2rem;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.intro .profile-img {
+  justify-self: end;
 }
 
 .sidebar {
