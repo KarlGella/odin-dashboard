@@ -47,9 +47,13 @@ h6 {
  Start
 */
 
+ul {
+  padding: 0;
+}
+
 .projects,
 .news,
-.trending {
+.trends {
   background-color: #eee;
 }
 
@@ -128,7 +132,8 @@ li {
   gap: 0.75rem;
 }
 
-.profile-header .profile-img {
+.profile-header .profile-img,
+img {
   border-radius: 50%;
   min-height: 0.5rem;
   width: 3rem;
@@ -144,7 +149,6 @@ li {
 }
 
 .head-buttons ul {
-  padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
@@ -256,7 +260,7 @@ ul li button {
   grid-column: 3 / 4;
 }
 
-.trending {
+.trends {
   grid-column: 3/4;
 }
 
@@ -273,10 +277,6 @@ ul li button {
   background-color: #fff;
   box-shadow: 2px 3px 3px lightgray;
   border-radius: 10px;
-}
-
-.news-container ul {
-  padding: 0;
 }
 
 .news-container ul {
@@ -307,4 +307,49 @@ ul li button {
 
 .news-item:nth-child(3) {
   padding-bottom: 20px;
+}
+
+/*
+  TRENDS
+*/
+
+.trends {
+  padding: 20px 20px 20px 15px;
+}
+
+.trends-container {
+  margin-top: 10px;
+  box-shadow: 2px 3px 3px lightgray;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+.trends-container ul {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.trend-item-container {
+  display: grid;
+  grid-template: 1fr 1fr / 3.5rem 1fr;
+}
+
+.trend-image {
+  grid-row: 1 / 3;
+  align-self: center;
+}
+
+.trend-user,
+.news-title {
+  font-weight: bold;
+  font-size: 0.9rem;
+  align-self: flex-end;
+}
+
+.trend-project,
+.news-text {
+  font-size: 0.85rem;
+  align-self: flex-start;
 }
