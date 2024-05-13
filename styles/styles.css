@@ -208,6 +208,7 @@ ul li button {
 .projects {
   padding: 20px 15px;
   grid-area: 2 / 2 / 4 / 3;
+  font-size: 1rem;
 }
 
 .projects-wrapper {
@@ -257,4 +258,53 @@ ul li button {
 
 .trending {
   grid-column: 3/4;
+}
+
+/*
+  NEWS
+*/
+
+.news {
+  padding: 20px 20px 20px 15px;
+}
+
+.news-container {
+  margin-top: 10px;
+  background-color: #fff;
+  box-shadow: 2px 3px 3px lightgray;
+  border-radius: 10px;
+}
+
+.news-container ul {
+  padding: 0;
+}
+
+.news-container ul {
+  display: grid;
+  place-content: start;
+  place-items: start;
+}
+
+.news-item-container {
+  padding: 20px 20px 0 20px;
+  display: grid;
+  grid-template-rows: 1rem minmax(0, 1fr);
+  gap: 15px;
+}
+
+.news-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.news-text-wrapper {
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 20px;
+}
+
+.news-item:nth-child(3) {
+  padding-bottom: 20px;
 }
